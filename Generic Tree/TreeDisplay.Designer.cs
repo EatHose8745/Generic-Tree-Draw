@@ -1,6 +1,6 @@
 ﻿namespace Generic_Tree
 {
-    partial class TreeDisplay
+    partial class TreeDisplay<T>
     {
         /// <summary>
         /// Required designer variable.
@@ -40,6 +40,7 @@
             this.TreeDrawEnvironment.Size = new System.Drawing.Size(803, 485);
             this.TreeDrawEnvironment.TabIndex = 0;
             this.TreeDrawEnvironment.TabStop = false;
+            this.TreeDrawEnvironment.DoubleClick += new System.EventHandler(this.TreeDrawEnvironment_DoubleClick);
             // 
             // TreeDisplay
             // 
@@ -52,6 +53,7 @@
             this.Name = "TreeDisplay";
             this.ShowIcon = false;
             this.Text = "Tree Display";
+            this.Load += new System.EventHandler(this.TreeDisplay_Load);
             this.SizeChanged += new System.EventHandler(this.TreeDisplay_SizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.TreeDrawEnvironment)).EndInit();
             this.ResumeLayout(false);

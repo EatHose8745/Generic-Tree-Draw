@@ -16,7 +16,7 @@ namespace Generic_Tree
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TreeDisplay());
+            Application.Run(new TreeDisplay<string>());
         }
     }
 }

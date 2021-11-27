@@ -28,5 +28,10 @@ namespace Generic_Tree
         {
             Children.Add(node);
         }
+
+        public bool HasChildren()
+        {
+            return Children.Count > 0;
+        }
     }
 }
